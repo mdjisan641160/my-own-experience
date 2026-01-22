@@ -14,6 +14,7 @@
         .header-section{
            width: 1000px;
            margin: auto;
+           margin-top: 10px;
            /* border: 1px solid red; */
            box-shadow: 0px 5px 15px  black;
             
@@ -76,6 +77,81 @@
             transform: scaleY(1.8);
             transition: transform 1s linear;
          }
+         .main-div{
+            width: 1000px;
+            margin: auto;
+            box-shadow: 1px 0px 5px 0.5px black;
+         }
+         .unordered-list{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            font-size: 11px;
+            height: 400px;
+            padding: 10px;
+            list-style: none;
+         }
+         .div-1{
+            grid-column: span 1;
+            grid-row: span 2;
+            text-align: justify;
+            padding: 20px;
+            box-shadow: 1px 0px 5px 0.5px black;
+         }
+         .div-1:hover{
+            background-color:coral;
+            transform: rotate(360deg);
+            transition: transform 1s linear;
+         }
+         .div-2{
+            grid-column: span 2;
+            grid-row: span 1;
+            text-align: justify;
+            padding: 20px;
+            box-shadow: 1px 0px 5px 0.5px black;
+         }
+         .div-2:hover{
+            background-color:coral;
+            transform: scaleY(.5);
+            transition: transform 1s linear;
+         }
+         .div-3{
+            grid-column: span 2;
+            grid-row: span 1;
+            text-align: justify;
+            padding: 20px;
+            box-shadow: 1px 0px 5px 0.5px black;
+         }
+         .div-3:hover{
+            background-color:coral;
+            transform: scaleX(.5);
+            transition: transform 1s linear;
+         }
+         .div-4{
+            grid-column: span 2;
+            grid-row: span 1;
+            text-align: justify;
+            padding: 20px;
+            box-shadow: 1px 0px 5px 0.5px black;
+         }
+         .div-4:hover{
+            background-color:coral;
+            transform: scaleY(1.5);
+            transition: transform 1s linear;
+         }
+         .div-5{
+            grid-column: span 1;
+            grid-row: span 1;
+            text-align: justify;
+            padding: 20px;
+            box-shadow: 1px 0px 5px 0.5px black;
+         }
+         .div-5:hover{
+            background-color:coral;
+            transform: rotate(360deg);
+            transition: transform 1s linear;
+         }
          .para-1:hover{
             background-color: aqua;
             border-radius: 30px;
@@ -116,7 +192,6 @@
             justify-content: center;
             align-items: center;
             gap: 65px;
-            background-color:darkolivegreen;
             margin: 35px 0 20px 0 ;
         }
         .two, .four, .six, .eight{
@@ -140,6 +215,7 @@
          
         .one{
             width: 200px;
+            box-shadow: 1px 0px 5px 0.5px black;
         }
         .one:hover{
             background-color: coral;
@@ -152,6 +228,7 @@
          
          .three{
             width: 200px;
+            box-shadow: 1px 0px 5px 0.5px black;
          }
          .three:hover{
             background-color: coral;
@@ -164,6 +241,7 @@
         
         .five{
             width: 200px;
+            box-shadow: 1px 0px 5px 0.5px black;
         }
         .five:hover{
             background-color: coral;
@@ -175,6 +253,7 @@
         }
         .seven{
             width: 200px;
+            box-shadow: 1px 0px 5px 0.5px black;
         }
         .seven:hover{
             background-color: coral;
@@ -194,8 +273,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 1000px;
+            margin: auto;
             margin-bottom: 20px;
             gap: 30px;
+            box-shadow: 1px 0px 5px 0.5px black;
+        }
+        .vd-1{
+            box-shadow: 1px 0px 5px 0.5px black;
+        }
+        .vd-2{
+            box-shadow: 1px 0px 5px 0.5px black;
+        }
+        .vd-3{
+            box-shadow: 1px 0px 5px 0.5px black;
         }
         .btn{
             display: flex;
@@ -214,17 +305,60 @@
         }
         .btn-section{
             width: 500px;
-            border: 4px solid red;
             margin: auto;
+            box-shadow: 1px 0px 5px 0.5px black;
         }
         #submitBtn{
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: auto;
+            margin: 10px auto;
         }
         .submit-ans{
             text-decoration: none;
+        }
+        .footer-section{
+           text-align: center;
+           width: 1000px;
+           margin: 20px auto 20px auto;
+           box-shadow: 1px 0px 5px 0.5px black;
+        }
+        .footer-heading{
+            color:rgb(93, 122, 43)
+        }
+        .footer-heading:hover{
+            background-color:aquamarine;
+            transform: scaleX(1.5);
+            transition: transform 1s linear;
+        }
+        .footer-para:hover{
+            background-color:lemonchiffon;
+            transform: rotate(-360deg);
+            transition: transform 1s linear;
+        }
+        .Time-Date{
+            color:rgb(3, 71, 71);
+        }
+        .Time-Date:hover{
+            background-color:linen;
+            transform: rotate(360deg);
+            transition: transform 1s linear;
+        }
+        #successMessage{
+            display: none;
+            color: red;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        #backBtn{
+            display: none;
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -232,7 +366,6 @@
     <header>
        <div class="header-section">
         <div class="img-tag">
-            
          <div class="profile-frame-1">
             <p class="para-3 para-1">My</p>
             <img class="img-tag"src="images/i`m.png" alt="">
@@ -257,8 +390,63 @@
        </div>
     </header>
     <main>
+        <section class="main-div">
+            <h2 title="Love You Forever" id="headings">We act, We strive, and victory shall be ours,</h2>
+           <ul class="unordered-list">
+             <div title="Waiting for Forever" class="div-1">
+                <h2>Patience</h2>
+                <li>He waited for her every evening at the same café.
+                Sometimes she came late, sometimes not at all.
+                People asked why he didn’t leave.
+                He smiled and said love isn’t a clock.
+                When she finally arrived one day, tired and broken,
+                he was still there—
+                and that was all she needed to believe in love again.</li>
+            </div>
+            <div title="The Smile That Heals" class="div-2">
+                <h2>Smile</h2>
+                <li>Her smile changed whenever she saw his name.
+                Even on the worst days, it softened her heart.
+                He never tried to impress her with big words.
+                He just listened, always.
+                One day she realized something quietly—
+                the safest place she knew
+                was inside his attention.</li>
+            </div>
+            <div title="A Seat Reserved for You" class="div-3">
+                <h2>Remember</h2>
+                <li>He always saved the seat beside him.
+                At home, at work, everywhere.
+                Even when she wasn’t there, he believed she would be.
+                People called it hope; some called it foolishness.
+                But one evening, she sat there silently.
+                No apologies, no explanations.
+                Just love returning to where it belonged.</li>
+            </div>
+            <div title="Silent Promises" class="div-4">
+                <h2>Silence</h2>
+                <li>They didn’t talk much that night.
+                Words felt too small for what they carried.
+                Their hands met, trembling but sure.
+                The noise of the world faded slowly.
+                In that silence, they understood everything—
+                love doesn’t need promises
+                when hearts already agree.</li>
+            </div>
+            <div title="Choosing You Every Day" class="div-5">
+                <h2>Choice</h2>
+                <li>Every day gave him a thousand reasons to leave.
+                Life was hard, love was complicated.
+                Yet every morning, he chose her again.
+                Not because it was easy,
+                but because it was real.
+                Love, he learned, isn’t a feeling—
+                it’s a decision made daily.❤️</li>
+            </div>
+           </ul>
+        </section>
         <section>
-            <h1 id="headings">My Love Is Only Yours</h1>
+            <h1 title="I Miss You All The Time" id="headings">My Love Is Only Yours</h1>
             <div class="hero-container">
             <div class="container">
                      <div class="one">
@@ -289,8 +477,8 @@
             </div>
         </section>
         <section>
-            <h2 title="You Are My Whole World {Nasrin}" id="headings">This Is My Feelings For You</h2>
-            <div class="video-tag">
+             <h2 title="You Are My Whole World {Nasrin}" id="headings">This Is My Feelings For You</h2>
+            <div title="I Love You" class="video-tag">
                <div class="vd-1">
                  <iframe title="This Is MY Emotion And Feelings For You, Dear" width="300" height="215" src="https://www.youtube.com/embed/qKzWukOLdg8?si=P2Ie8tOXcepE3Jim" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                </div>
@@ -303,27 +491,77 @@
             </div>
         </section>
         <section class="btn-section">
+            <h2 title="This Is MY Emotion And Feelings For You, Dear" class="scaleY">Will You Love Me Forever?</h2>
+            <div class="btn">
+                <input title="Please! Click On Yes Button" type="text" class="answer-input" name="Yes" id="No" placeholder="Type Yes/No" required>
+            </div>
+            <h2 title="This Is MY Emotion And Feelings For You, Dear" class="scaleY">Will You Be Mine?</h2>
+            <div class="btn">
+                <input title="Please! Click On Yes Button" type="text" class="answer-input" name="Yes" id="No" placeholder="Type Yes/No" required>
+            </div>
             <h2 title="This Is MY Emotion And Feelings For You, Dear" class="scaleY">Will You Marry Me?</h2>
             <div class="btn">
-                <input title="Please! Click On Yes Button" type="text" name="Yes" id="No" placeholder="Yes" required>
-                <input title="Please! Don`t Click On No Button" type="text" name="No" id="Yes" placeholder="No"required>
+                <input title="Please! Click On Yes Button" type="text" class="answer-input" name="Yes" id="No" placeholder="Type Yes/No" required>
             </div>
-             <button id="submitBtn" title="Submit Your Answer" type="send" required>Submit</button>
-             <div id="successMessage" style="display:none; color:red; font-size: 25px; margin-top: 20px;">
-                "Congratulations! ❤️ You Passed The Mission"
+             <button id="submitBtn" title="Submit Your Answer" type="button" required>Submit</button>
+             <div id="successMessage">
+                <p>"Congratulations! ❤️ You Passed The Mission"</p>
+             </div>
+             <div>
+                <button type="button" id="backBtn">Go Back & Try Again</button>
              </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer-section">
+        <div class="footer-heading">
+            <h3 title="One day or other, We will enjoy our beautiful life & travel the whole world">❤️💖💞This Is Made By MD Jubayer Jisan❤️💖💞</h3>
+        </div>
+        <div class="footer-para">
+            <p title="I Love You Again & Again,">🤍✨I have started the year 2026 anew with a beautiful soul.
+            Please keep us in your prayers,
+            so that we may walk this journey together with love, trust, and peace. 🤍✨</p>
+        </div>
+        <div class="Time-Date">
+            <h4 title="Our Love Will Last Till Death Do Us Part❤️💖💞"><em>🌱Start Date(04-January-2026)---End Date(Our Love Will Last Till Death Do Us Part)✨</em></h4>
+        </div>
     </footer>
-    <script>
-        const submitBtn = document.getElementById('submitBtn');
-        const successMessage = documentget.ElementById('successMessage');
-        submitBtn.addEventListener('click', function() {
-            successMessage.style.display = 'block';
-            alert('Congratulations! ❤️ You Passed The Mission');
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const submitBtn = document.getElementById('submitBtn');
+            const successMessage = document.getElementById('successMessage');
+            const inputs = document.querySelectorAll('.answer-input');
+            if (submitBtn) {
+                submitBtn.addEventListener('click', function()
+                {
+                    let allYes = true;
+                    inputs.forEach(input =>
+                        {
+                            if
+                            (input.value.toLowerCase().trim() !== 'yes') {
+                                allYes = false;
+                            }
+                    });
+                    if(allYes) {
+                        if (successMessage)
+                    {
+                        successMessage.style.display = 'block';
+                    }
+                     alert('Congratulations! ❤️ You Passed The Mission');
+                    } else {
+                        alert('Please answer "yes" to all questions to pass the mission!');
+                    }
+                });
+            }
         });
-    </script>
+        if (backBtn) {
+            backBtn.addEventListener('click', function() {
+                inputs.forEach(input =>input.value = '');
+                backBtn.style.display = 'none';
+                if (successMessage)
+                successMessage.style.display = 'none';
+                 });
+            }
+        </script>
 </body>
 </html>
