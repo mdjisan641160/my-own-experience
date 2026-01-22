@@ -182,9 +182,14 @@
             margin-top: 20px;
             font-size: 30px;
         }
+        .ping-pong{
+            width: 1000px;
+            margin: auto;
+            box-shadow: 2px 5px 10px 0px rgb(23, 8, 8);
+        }
         .hero-container{
             width: 1000px;
-            margin: 35px auto;
+            margin: 11px auto;
             box-shadow: 2px 5px 10px 0px rgb(23, 8, 8);
         }
         .container{
@@ -192,7 +197,7 @@
             justify-content: center;
             align-items: center;
             gap: 65px;
-            margin: 35px 0 20px 0 ;
+            padding: 10px;
         }
         .two, .four, .six, .eight{
             border-radius: 15px;
@@ -263,6 +268,84 @@
             width: 200px;
             height: 220px;
         }
+        #animation-polo{
+            width: 1000px;
+            margin: auto;
+            padding-bottom: 10px;
+            box-shadow: 1px 0px 5px 0.5px black;
+        }
+        .animation{
+            width: 900px;
+            height: 300px;
+            margin: auto;
+            box-shadow: 1px 0px 5px 0.5px black;
+        }
+        .ball-1 img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            animation: i-am 2s ease-in 1s infinite alternate;
+        }
+        @keyframes i-am{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                left: 200px;
+                top: 100px;
+                background-color:red;
+            }
+            50%{
+                left: 400px;
+                top: 0px;
+                background-color:yellow;
+            }
+            75%{
+                left: 600px;
+                top: 100px;
+                background-color:blue;
+            }
+            100%{
+                left: 800px;
+                top: 0px;
+                background-color:white;
+            }
+        }
+        .ball-2 img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            animation: you 2s ease-in 1s infinite alternate-reverse;
+        }
+        @keyframes you{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                left: 200px;
+                top: 100px;
+                background-color:red;
+            }
+            50%{
+                left: 400px;
+                top: 0px;
+                background-color:yellow;
+            }
+            75%{
+                left: 600px;
+                top: 100px;
+                background-color:blue;
+            }
+            100%{
+                left: 800px;
+                top: 0px;
+                background-color:white;
+            }
+        }
         .hero{
             color: black;
             text-align: justify;
@@ -287,6 +370,31 @@
         }
         .vd-3{
             box-shadow: 1px 0px 5px 0.5px black;
+        }
+        .how-much{
+            width: 500px;
+            margin: auto;
+            box-shadow: 1px 0px 5px 0.5px black;
+        }
+        .love-me{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-shadow: 1px 0px 5px 0.5px black;
+        }
+        .love-me input:hover{
+            background-color:aquamarine;
+            cursor: pointer;
+            transform: scale(2.5);
+            transition: transform 1s linear;
+        }
+        .love-me label:hover{
+            cursor: grab;
+            background-color:cyan;
+            transform: rotate(360deg);
+            transition: transform 1s linear;
         }
         .btn{
             display: flex;
@@ -445,7 +553,7 @@
             </div>
            </ul>
         </section>
-        <section>
+        <section class="ping-pong">
             <h1 title="I Miss You All The Time" id="headings">My Love Is Only Yours</h1>
             <div class="hero-container">
             <div class="container">
@@ -477,6 +585,20 @@
             </div>
         </section>
         <section>
+            <div id="animation-polo">
+                <h2 id="headings">You & Me Forever</h2>
+            <div class="animation">
+               
+                <div class="ball-1">
+                    <img src="images/i`m.png" alt="">
+                </div>
+                <div class="ball-2">
+                    <img src="images/you.jpg" alt="">
+                </div>
+            </div>
+            </div>
+        </section>
+        <section>
              <h2 title="You Are My Whole World {Nasrin}" id="headings">This Is My Feelings For You</h2>
             <div title="I Love You" class="video-tag">
                <div class="vd-1">
@@ -489,6 +611,23 @@
                 <iframe width="300" height="215" src="https://www.youtube.com/embed/BSJa1UytM8w?si=jEZjh7toxPhXArve" title="This Is MY Emotion And Feelings For You, Dear" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                </div>
             </div>
+            <section>
+                <div class="how-much">
+                    <h2 id="headings">How Much Do You Love Me?</h2>
+                    <div class="love-me">
+                        <label for="btn0%">0%</label>
+                       <input type="radio" name="love" id="btn0%">
+                       <label for="btn25%">25%</label>
+                       <input type="radio" name="love" id="btn25%">
+                       <label for="btn50%">50%</label>
+                       <input type="radio" name="love" id="btn50%">
+                       <label for="btn75%">75%</label>
+                       <input type="radio" name="love" id="btn75%">
+                        <label for="btn100%">100%</label>
+                       <input type="radio" name="love" id="btn100%">
+                    </div>
+                </div>
+            </section>
         </section>
         <section class="btn-section">
             <h2 title="This Is MY Emotion And Feelings For You, Dear" class="scaleY">Will You Love Me Forever?</h2>
