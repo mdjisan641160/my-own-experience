@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            max-width: 1280px;
+            background-color: #FADADD;
+        }
+        .header-section{
+           width: 1000px;
+           margin: auto;
+           /* border: 1px solid red; */
+           box-shadow: 0px 5px 15px  black;
+            
+        }
+        .img-tag{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .profile-frame-1 img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* margin-top: 30px; */
+        }
+        .profile-frame-1 img:hover{
+            transform: translateX(360px);
+            transition: transform 1s linear;
+        }
+        .profile-frame-2 img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* margin-top: 30px; */
+        }
+        .profile-frame-2 img:hover{
+            transform: translateX(-360px);
+            transition: transform 1s linear;
+        }
+        .small-pic img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-top: 60px;
+        }
+        .small-pic img:hover{
+            transform: scaleX(1.5);
+            transition: transform 1s linear;
+        }
+        
+         .navbar h1, p{
+            display: flex;
+            justify-content: center;
+            margin-top: -25px;
+            color:lightslategray;
+         }
+         .navbar>h1{
+            font-size: 25px;
+            margin-top: -30px;
+            margin-bottom: 30px;
+         }
+         .navbar h1:hover{
+            background-color: yellow;
+            transform: scaleX(1.3);
+            transition: transform 1s linear;
+         }
+         .navbar p:hover{
+            background-color: greenyellow;
+            transform: scaleY(1.8);
+            transition: transform 1s linear;
+         }
+         .para-1:hover{
+            background-color: aqua;
+            border-radius: 30px;
+            transform: rotate(360deg);
+            transition: transform 1s ease-in-out;
+         }
+          .para-2:hover{
+            background-color: aqua;
+            border-radius: 20px;
+            transform: rotate(360deg);
+            transition: transform 1s ease-in-out;
+         }
+         .para-1{
+            font-size: 40px;
+            margin-top: 0px;
+            color:coral;
+         }
+        .para-2{
+            font-size: 40px;
+            margin-top: 50px;
+            color:indianred;
+        }
+        .my_life{
+            display: flex;
+            margin-top: -230px;
+        }
+        .para-3{
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        .hero-container{
+            width: 1000px;
+            margin: 35px auto;
+            box-shadow: 2px 5px 10px 0px rgb(23, 8, 8);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 65px;
+            background-color:darkolivegreen;
+            margin: 35px 0 20px 0 ;
+        }
+        .two, .four, .six, .eight{
+            border-radius: 15px;
+        }
+        #headings{
+            text-align: center;
+            color: rgb(252, 120, 120);
+            margin-top: 30px;
+        }
+         #headings:hover{
+            cursor:grab;
+            transform: rotate(360deg);
+            transition: transform 1s ease-in-out;
+            background-color:cornsilk;
+         }
+         .one, .three, .five, .seven{
+            background-color: rgb(221, 181, 250);
+            border-radius: 20px;
+         }
+         
+        .one{
+            width: 200px;
+        }
+        .one:hover{
+            background-color: coral;
+            cursor:pointer;
+         }
+         .two{
+            width: 200px;
+            height: 205px;
+         }
+         
+         .three{
+            width: 200px;
+         }
+         .three:hover{
+            background-color: coral;
+            cursor:pointer;
+         }
+        .four{
+            width: 200px;
+            height: 220px;
+        }
+        
+        .five{
+            width: 200px;
+        }
+        .five:hover{
+            background-color: coral;
+            cursor:pointer;
+         }
+        .six{
+            width: 200px;
+            height: 220px;
+        }
+        .seven{
+            width: 200px;
+        }
+        .seven:hover{
+            background-color: coral;
+            cursor:pointer;
+         }
+        .eight{
+            width: 200px;
+            height: 220px;
+        }
+        .hero{
+            color: black;
+            text-align: justify;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .video-tag{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 30px;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .scaleY{
+            text-align: center;
+            color:grey;
+        }
+        .scaleY:hover{
+            cursor:copy;
+            transform: scaleY(1.5);
+            transition: transform 1s linear;
+            background-color:rgb(120, 226, 252);
+        }
+        .btn-section{
+            width: 500px;
+            border: 4px solid red;
+            margin: auto;
+        }
+        #submitBtn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        .submit-ans{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <div class="header-section">
+        <div class="img-tag">
+            
+         <div class="profile-frame-1">
+            <p class="para-3 para-1">My</p>
+            <img class="img-tag"src="images/i`m.png" alt="">
+            <p class="para-1">I</p>
+         </div>
+         
+         <div class="small-pic">
+            <p class="para-3 para-2">Life</p>
+            <img src="images/images.jpg" alt="">
+           <p class="para-2">Love</p>
+         </div>
+         <div class="profile-frame-2">
+            <p class="para-3 para-1">Line</p>
+            <img src="images/You.png" alt="">
+            <p class="para-1">You</p>
+         </div>
+       </div>
+        <nav class="navbar">
+            <h1>“Nasrin, you are my favorite person and the calm in my chaos.” 💙</h1>
+            <p>“তোমাকে ভালোবাসা আমার জীবনের সবচেয়ে সুন্দর সিদ্ধান্ত।”</p>
+        </nav>
+       </div>
+    </header>
+    <main>
+        <section>
+            <h1 id="headings">My Love Is Only Yours</h1>
+            <div class="hero-container">
+            <div class="container">
+                     <div class="one">
+                <img title="I Love You At Every Situation" class="two" src="images/two.jpeg" alt="">
+                <p class="hero">I found you without searching,
+                    I loved you without trying,
+                    I’ll keep you without question.</p>
+                </div>
+                <div class="three">
+                <img title="I Miss You At Every Situation" class="four" src="images/four.jpeg" alt="">
+                <p class="hero">You are my calm,
+                    My safest feeling,
+                    My forever thought.</p>
+                </div>
+                <div class="five">
+                <img title="I Fall In Your At Every Moment" class="six" src="images/six.webp" alt="">
+                <p class="hero">Every smile of yours,
+                    Every silent moment,
+                    Lives gently in my heart.</p>
+                </div>
+                <div class="seven">
+                <img title="I Want You To Attach With My Life At Every Single Day" class="eight" src="images/eight.webp" alt="">
+                <p class="hero">If love had a voice,
+                    It would speak your name,
+                    Softly, endlessly, truly.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <h2 title="You Are My Whole World {Nasrin}" id="headings">This Is My Feelings For You</h2>
+            <div class="video-tag">
+               <div class="vd-1">
+                 <iframe title="This Is MY Emotion And Feelings For You, Dear" width="300" height="215" src="https://www.youtube.com/embed/qKzWukOLdg8?si=P2Ie8tOXcepE3Jim" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               </div>
+               <div class="vd-2">
+                <iframe width="300" height="215" src="https://www.youtube.com/embed/1-6zZ6-R49g?si=r9rnJjuHl7Y4GX4u" title="This Is MY Emotion And Feelings For You, Dear" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               </div>
+               <div class="vd-3">
+                <iframe width="300" height="215" src="https://www.youtube.com/embed/BSJa1UytM8w?si=jEZjh7toxPhXArve" title="This Is MY Emotion And Feelings For You, Dear" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               </div>
+            </div>
+        </section>
+        <section class="btn-section">
+            <h2 title="This Is MY Emotion And Feelings For You, Dear" class="scaleY">Will You Marry Me?</h2>
+            <div class="btn">
+                <input title="Please! Click On Yes Button" type="text" name="Yes" id="No" placeholder="Yes" required>
+                <input title="Please! Don`t Click On No Button" type="text" name="No" id="Yes" placeholder="No"required>
+            </div>
+             <button id="submitBtn" title="Submit Your Answer" type="send" required>Submit</button>
+             <div id="successMessage" style="display:none; color:red; font-size: 25px; margin-top: 20px;">
+                "Congratulations! ❤️ You Passed The Mission"
+             </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        const submitBtn = document.getElementById('submitBtn');
+        const successMessage = documentget.ElementById('successMessage');
+        submitBtn.addEventListener('click', function() {
+            successMessage.style.display = 'block';
+            alert('Congratulations! ❤️ You Passed The Mission');
+        });
+    </script>
+</body>
+</html>
